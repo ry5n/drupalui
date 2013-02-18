@@ -1,0 +1,41 @@
+/**
+ * @file
+ */
+
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+
+/* ==========================================================================
+   Skin
+   ========================================================================== */
+
+body {
+  font-family: "Source Sans Pro", "Calibri", "Lucida Sans", "Lucida Grande", sans-serif;
+  color: #1a1a1a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+a {
+  color: #0074bd;
+}
+a:focus,
+a:hover {
+  color: #007ac7;
+}

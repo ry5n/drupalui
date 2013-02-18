@@ -1,0 +1,201 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Test Components</title>
+
+    <link rel="stylesheet" href="stylesheets/vendor/normalize.css">
+    <link rel="stylesheet" href="stylesheets/base/elements.css">
+    <link rel="stylesheet" href="stylesheets/layouts/layout.css">
+    <link rel="stylesheet" href="stylesheets/components/utils.css">
+    <link rel="stylesheet" href="stylesheets/components/typography.css">
+    <link rel="stylesheet" href="stylesheets/components/lists.css">
+    <link rel="stylesheet" href="stylesheets/components/carets.css">
+    <link rel="stylesheet" href="stylesheets/components/buttons.css">
+    <link rel="stylesheet" href="stylesheets/components/button-groups.css">
+    <link rel="stylesheet" href="stylesheets/components/popups.css">
+    <link rel="stylesheet" href="stylesheets/components/menus.css">
+    <link rel="stylesheet" href="stylesheets/skins/skin.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic'>
+
+    <script src="javascripts/vendor/modernizr.js"></script>
+
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  </head>
+
+  <body>
+    <div class="l-container clearfix">
+      <h1 class="heading-a">Test Components</h1>
+      <section class="leader">
+        <h2 class="heading-b">Buttons</h2>
+        <ul class="clearfix">
+          <li class="inline-sibling">
+
+            <button class="button" type="button">Button</button>
+
+          </li>
+          <li class="inline-sibling">
+
+            <input type="submit" class="button" value="Submit" />
+
+          </li>
+          <li class="inline-sibling">
+
+            <a href="#" class="button">Link</a>
+
+          </li>
+          <li class="inline-sibling">
+
+            <button class="button is-disabled" type="button">Disabled</button>
+
+          </li>
+        </ul>
+      </section>
+      <section class="leader">
+        <h2 class="heading-b">Popups</h2>
+
+        <div class="popup popup--padded" aria-hidden="true" style="display: block; position: static; display: table;">
+            Popups may contain anything, not just menus.
+        </div>
+
+      </section>
+      <section class="leader">
+        <h2 class="heading-b">Menus</h2>
+
+        <ul class="menu js-menu" role="menu">
+          <li role="presentation">
+            <button class="menu__item js-menu__item" type="button" role="menuitem">Button option</button>
+          </li>
+          <li role="presentation">
+            <input class="menu__item js-menu__item" type="submit" role="menuitem" value="Input option">
+          </li>
+          <li role="presentation">
+            <a href="#" class="menu__item js-menu__item" role="menuitem">Link option</a>
+          </li>
+        </ul>
+
+      </section>
+      <section class="leader">
+        <h2 class="heading-b">Dropdown Menu</h2>
+
+        <div class="popup" id="popup-1" aria-hidden="true" style="display: table; position: static;">
+          <ul class="menu js-menu" role="menu">
+            <li role="presentation">
+              <button class="menu__item js-menu__item" type="button" role="menuitem">Button option</button>
+            </li>
+            <li role="presentation">
+              <input class="menu__item js-menu__item" type="submit" role="menuitem" value="Input option">
+            </li>
+            <li role="presentation">
+              <a href="#" class="menu__item js-menu__item" role="menuitem">Link option</a>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+      <section class="leader">
+        <h2 class="heading-b">Extended Buttons</h2>
+        <ul class="clearfix">
+          <li class="inline-sibling">
+
+            <button class="button button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-2">Dropdown <i class="caret" aria-hidden="true"></i></button>
+
+          </li>
+          <li class="inline-sibling">
+
+            <button class="button button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-3">Dropdown <i class="caret" aria-hidden="true"></i></button>
+
+          </li>
+        </ul>
+        <div class="leader">
+
+          <div class="button-group js-split-button">
+            <button class="button" type="button">Button</button>
+            <button class="button button--iconic button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-4"><i class="caret"><span class="visually-hidden">Menu</span></i></button>
+          </div>
+
+        </div>
+        <div class="leader">
+
+          <div class="button-group">
+            <button class="button" type="button">Sleepy</button>
+            <button class="button button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-5">Sneezy <i class="caret" aria-hidden="true"></i></button>
+            <button class="button" type="button">Dopey</button>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="popup" id="popup-2" aria-hidden="true">
+      <ul class="menu js-menu" role="menu" >
+        <li role="presentation">
+          <button class="menu__item js-menu__item" type="button" role="menuitem">Button option</button>
+        </li>
+        <li role="presentation">
+          <input class="menu__item js-menu__item" type="submit" role="menuitem" value="Input option">
+        </li>
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem">Link option</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="popup" id="popup-3" aria-hidden="true">
+      <ul class="menu js-menu" role="menu" >
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem">Eeney</a>
+        </li>
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem">Meeney</a>
+        </li>
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem">Miney</a>
+        </li>
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem">Mo</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="popup" id="popup-4" aria-hidden="true">
+      <ul class="menu js-menu" role="menu" >
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem">Cut</a>
+        </li>
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem">Copy</a>
+        </li>
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem">Paste</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="popup" id="popup-5" aria-hidden="true">
+      <ul class="menu js-menu" role="menu" >
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem">Show navbar</a>
+        </li>
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem">Show sidebar</a>
+        </li>
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem">Show minibar</a>
+        </li>
+      </ul>
+    </div>
+
+  </body>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery.min.js"><\/script>')</script>
+  <script src="javascripts/vendor/jquery-ui.custom.js"></script>
+  <script src="javascripts/components/drupal.component.js"></script>
+  <script src="javascripts/components/drupal.popup.js"></script>
+  <!-- <script src="javascripts/components/drupal.popupMenu.js"></script> -->
+  <script src="javascripts/components/drupal.menu.js"></script>
+  <script src="javascripts/main.js"></script>
+</html>

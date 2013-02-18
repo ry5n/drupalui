@@ -1,0 +1,29 @@
+/**
+ * @file
+ */
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top: .35em solid #000000;
+  border-right: .325em solid transparent;
+  border-left: .325em solid transparent;
+}
+
+/* ==========================================================================
+   Skin
+   ========================================================================== */
+
+.caret {
+  border-top-color: #262626;
+}
+.button--popup > .caret {
+  margin-left: .25em;
+  margin-right: -.25em;
+}
+.button--iconic > .caret {
+  margin-left: -.2em;
+  margin-right: -.25em;
+}

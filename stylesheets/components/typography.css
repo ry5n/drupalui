@@ -1,0 +1,29 @@
+/**
+ * @file
+ */
+.leader {
+  margin-top: 1.5em;
+}
+.trailer {
+  margin-bottom: 1.5em;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+.heading-a {
+  font-size: 1.625em;
+  line-height: 1.875em;
+  margin-top: 1.846em;
+  margin-bottom: 0.923em;
+}
+.heading-b {
+  font-size: 1.313em;
+  line-height: 1.143em;
+  margin-top: 1.714em;
+  margin-bottom: 0.571em;
+}

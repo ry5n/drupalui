@@ -1,0 +1,40 @@
+/**
+ * @file
+ */
+
+.popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  overflow: hidden;
+  margin-top: 2px;
+}
+.popup.is-open {
+  display: block;
+  z-index: 90;
+}
+.popup.is-transitioning-out {
+  z-index: 80;
+}
+
+/* ==========================================================================
+   Skin
+   ========================================================================== */
+
+.popup {
+  display: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #a6a6a6;
+  border-color: hsla(0, 0%, 0%, .3);
+  border-radius: 5px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 3px 6px hsla(0, 0%, 0%, .15);
+  -moz-box-shadow:    0 3px 6px hsla(0, 0%, 0%, .15);
+  box-shadow:         0 3px 6px hsla(0, 0%, 0%, .15);
+}
+.popup--padded {
+  padding: .75em 1em;
+}
+
+

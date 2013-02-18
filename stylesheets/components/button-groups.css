@@ -1,0 +1,52 @@
+/**
+ * @file
+ */
+
+.button-group {
+  display: inline-block;
+}
+
+/* Auto-clearfix so we don’t need to remember .clearfix */
+.button-group:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.button-group > .button {
+  float: left;
+}
+
+/* ==========================================================================
+   Skin
+   ========================================================================== */
+
+.button-group {
+  padding-left: 1px;
+}
+
+/**
+ * The child selector is appropriate here because these styles are inherently
+ * tied to the button-group situation and are unlikely to be useful elsewhere.
+ */
+.button-group > .button {
+  border-radius: 0;
+  margin-left: -1px;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+/**
+ * Styles to re-add border-radius and related properties don’t need to support
+ * IE8, since it doesn’t support border-radius in the first place.
+ */
+.button-group > .button:first-of-type {
+  border-top-left-radius: 20em;
+  border-bottom-left-radius: 20em;
+  padding-left: 1em;
+}
+.button-group > .button:last-of-type {
+  border-top-right-radius: 20em;
+  border-bottom-right-radius: 20em;
+  padding-right: 1em;
+}

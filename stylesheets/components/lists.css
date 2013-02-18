@@ -1,0 +1,14 @@
+/**
+ * @file
+ */
+.block-sibling {
+  padding: .75em 0;
+}
+
+.inline-sibling {
+  float: left;
+  margin-right: 1.5em;
+}
+.inline-sibling:last-child {
+  margin-right: 0;
+}

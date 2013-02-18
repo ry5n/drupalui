@@ -1,0 +1,59 @@
+/**
+ * @file
+ */
+
+/**
+ * Popup menus get temporary focus via tabindex to enable keydown detection;
+ * we don’t want this to be visible.
+ */
+.menu {
+  outline: 0;
+}
+
+.menu__item {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  line-height: normal;
+}
+
+
+/* ==========================================================================
+   Skin
+   ========================================================================== */
+
+.menu__item {
+  padding: .35em 1em .35em;
+  font-size: 0.938em;
+  color: #262626;
+  text-align: left;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Dark bg; better contrast, but looks harsh */
+/*.menu__item:focus,
+.menu__item:hover {
+  background: #007ac7;
+  color: #ffffff;
+  outline: none;
+}*/
+
+/* Light bg; may have a11y issues */
+.menu__item:focus,
+.menu__item:hover {
+  background: #b8e6ff;
+  background: hsla(201, 100%, 70%, .35);
+  outline: none;
+  color: #1a1a1a;
+}
+.menu__item:active {
+  background: #b8e6ff;
+  background: hsla(201, 100%, 70%, .55);
+}
