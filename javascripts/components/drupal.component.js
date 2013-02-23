@@ -1,5 +1,8 @@
 /*!
  * Drupal UI Base Component
+ * 
+ * Inherits from the jQuery UI Widget Factory and overrides a number of methods
+ * fromt the base Widget.
  */
 
 ;(function( $, w, d, undefined ) {
@@ -13,11 +16,21 @@
   // literal to become the widget's prototype );
 
   $.widget( "drupal.component", $.Widget, {
-
+    
+    // Add a data-attribute to the component instance so we can query
+    // the DOM for all of the Drupal components. Useful for simple
+    // pub/sub like so: $('[data-component]').trigger('drupal:event');
+    // For production code, the data-attributes should use a Drupal
+    // namespace, like data-DrupalUI-component, or shorthand like
+    // data-DCUI-component (Drupal Core UI).
     _create: function() {
       this.element.attr( 'data-component', this.widgetName );
     }
-
+    
+    // Overriding the following methods (destroy, _on, _hoverable, _focusable) 
+    // is dumb, but jQuery UI doesn’t allow us to configure the state classes 
+    // like 'ui-state-disabled'. It has been done here as an easy way to 
+    // achive (better) SMACSS conventions, so we have 'is-disabled' etc.
   , destroy: function() {
       this._destroy();
       // we can probably remove the unbind calls in 2.0
