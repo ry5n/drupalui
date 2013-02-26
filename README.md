@@ -9,6 +9,10 @@ Experimental set of UI components for Drupal, focusing on the D8 version of the 
 
 The code presently focuses on the splitbutton component, and necessarily implements the components on which it depends (button, popup, menu).
 
+## Known issues
+
+Currently popups are not correctly positioned in Firefox.
+
 ## Code review is welcome
 
 I made an effort to code the components to all of our current standards, including accessibility. The components are keyboard-navigable, and work fairly well in VoiceOver, but I have not tested in other screen readers. I would love to receive feedback on any aspects of code quality and performance. Incidentally, I am aware that the JavaScript in particular is not of the highest quality.
