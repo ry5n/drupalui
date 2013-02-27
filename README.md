@@ -11,7 +11,7 @@ The code presently focuses on the splitbutton component, and necessarily impleme
 
 ## Known issues
 
-Currently popups are not correctly positioned in Firefox.
+<del>Currently popups are not correctly positioned in Firefox.</del> <em>corrected</em>
 
 ## Code review is welcome
 
