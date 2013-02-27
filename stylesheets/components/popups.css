@@ -2,10 +2,9 @@
  * @file
  */
 
+/* Positioning is applied with JS at runtime. */
 .popup {
   position: absolute;
-  top: 100%;
-  left: 0;
   overflow: hidden;
   margin-top: 2px;
 }
